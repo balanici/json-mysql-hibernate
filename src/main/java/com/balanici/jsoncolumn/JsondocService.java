@@ -6,5 +6,5 @@ public interface JsondocService {
 
     List<Jsondoc> findAll();
 
-    Jsondoc findByName(String name);
+    List<String> findAllNamesFromData();
 }

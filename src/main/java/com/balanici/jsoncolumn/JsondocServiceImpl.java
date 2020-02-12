@@ -18,7 +18,7 @@ public class JsondocServiceImpl implements JsondocService {
     }
 
     @Override
-    public Jsondoc findByName(String name) {
-        return null;
+    public List<String> findAllNamesFromData() {
+        return jsondocRepository.findAllNamesFromData();
     }
 }

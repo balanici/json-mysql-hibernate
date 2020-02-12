@@ -24,4 +24,10 @@ public class JsondocController {
 
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
+
+    @GetMapping("/names")
+    public ResponseEntity<List<String>> getNames() {
+        List<String> names = jsondocService.findAllNamesFromData();
+        return new ResponseEntity<>(names, HttpStatus.OK);
+    }
 }
